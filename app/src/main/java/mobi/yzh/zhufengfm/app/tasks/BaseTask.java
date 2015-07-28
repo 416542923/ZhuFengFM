@@ -23,7 +23,7 @@ public abstract class BaseTask extends AsyncTask<String, Integer, TaskResult> {
     protected void onPostExecute(TaskResult taskResult) {
         super.onPostExecute(taskResult);
         if (callback != null) {
-            callback.onFinished(taskResult);
+            callback.onTaskFinished(taskResult);
         }
     }
 }

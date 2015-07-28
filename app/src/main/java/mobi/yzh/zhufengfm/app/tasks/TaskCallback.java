@@ -13,6 +13,6 @@ public interface TaskCallback {
      * 当异步任务执行成功进行回调
      * @param result
      */
-    void onFinished(TaskResult result);
+    void onTaskFinished(TaskResult result);
 
 }
